@@ -15,7 +15,7 @@
         </li>
         <li class="nav-item">
         <form id="calcularTotalForm" action="/calcular" method="post">
-        <input type="hidden" name="listasSelecionadasJSON" id="listasSelecionadasJSON" value="">
+        <input type="hidden" name="listasSelecionadasJSON" id="listasSelecionadasJSON" value=""/>
 
           <a class="nav-link" id="calcularTotalBtn" type="submit">Calcular Total</a>
         </form>
