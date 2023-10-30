@@ -1,0 +1,24 @@
+
+CREATE DATABASE lista_compras;
+
+USE lista_compras;
+
+CREATE TABLE listas_compras (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    data DATE NOT NULL DEFAULT CURRENT_DATE
+);
+
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE itens_lista (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_lista INT,
+    id_produto INT,
+    quantidade INT NOT NULL,
+    FOREIGN KEY (id_lista) REFERENCES listas_compras(id),
+    FOREIGN KEY (id_produto) REFERENCES produtos(id)
+);

@@ -1,0 +1,19 @@
+{
+    "name": "thaya/teste",
+    "require": {
+        "slim/slim": "^4.12",
+        "league/plates": "^3.5",
+        "slim/psr7": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        },
+        "files":["app/helpers/helpers.php"]
+    },
+    "authors": [
+        {
+            "name": "thayano"
+        }
+    ]
+}
