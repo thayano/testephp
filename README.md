@@ -2,7 +2,7 @@ Projeto desenvolvido utilizando Php, Slim, Mysql
 
 ## Getting Started
 
-Primeiro, execute o script do banco de dados que esta localizado em app/database/script-db.txt
+Primeiro, execute o script para criar o banco de dados, o arquivo esta esta localizado em app/database/script-db.txt
 
 Segundo, altere o arquivo app/database/Connection.php com as suas informações de banco de dados e usuario:
 
